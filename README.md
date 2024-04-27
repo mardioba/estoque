@@ -29,3 +29,5 @@ python manage.py migrate
 [Include Bootstrap’s CSS and JS - Template Base.html](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 
 [django-widget-tweaks](https://github.com/jazzband/django-widget-tweaks)
+
+[Class Based View](https://ccbv.co.uk/)

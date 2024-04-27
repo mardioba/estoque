@@ -1,6 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.views.generic import CreateView
 from .models import Produto
-
+from .forms import ProdutoForm
+from django.urls import reverse_lazy
 def produto_list(request):
   template_name = 'produto_list.html'
   objects = Produto.objects.all()
@@ -16,3 +18,9 @@ def produto_detail(request, pk):
 def produto_add(request):
   template_name = 'produto_form.html'
   return render(request, template_name)
+
+class ProdutoCreate(CreateView):
+  model = Produto
+  template_name = 'produto_form.html'
+  form_class = ProdutoForm
+  success_url = reverse_lazy('produto:produto_list')
