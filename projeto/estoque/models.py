@@ -30,4 +30,5 @@ class EstoqueItens(models.Model):
     ordering = ('pk',)
     
   def __str__(self):
+    # Para melhor visualização
     return '{} - {} - {}'.format(self.pk, self.estoque.pk, self.produto)
