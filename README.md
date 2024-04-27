@@ -20,7 +20,8 @@ python manage.py migrate
 
 ## Links
 
-https://github.com/HBNetwork/python-decouple
+[python-decouple](https://github.com/HBNetwork/python-decouple)
 
-https://simpleisbetterthancomplex.com/2015/11/26/package-of-the-week-python-decouple.html
+[Como usar o desacoplamento Python](https://simpleisbetterthancomplex.com/2015/11/26/package-of-the-week-python-decouple.html)
 
+[tutoriais django basico por RG3915](https://github.com/rg3915/tutoriais)
