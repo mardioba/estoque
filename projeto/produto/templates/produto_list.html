@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+
+{% block css %}
+  <style>
+.ok{
+  color: green;
+}
+.no{
+  color: red;
+}
+  </style>
+{% endblock css %}
+  
+{% block content %}
+<div class="page-header">
+  <h2><i class="fa fa-user"></i> Lista de Produtos</h2>
+  
+  {% if object_list %}
+    
+  
+  <table class="table table-striped">
+    <thead>
+      <tr>
+      <th>Importado</th>
+      <th>NCM</th>
+      <th>Produto</th>
+      <th>Preço</th>
+      <th class="text-center">Estoque</th>
+      <th class="text-center">Estoque minimo</th>
+    </tr>
+    </thead>
+    <tbody>
+      {% for obj in object_list %}
+        <tr>
+          <td>
+            
+            {% if obj.importado %}
+              <i class="fa fa-check-circle ok"></i>
+            {% else %}
+              <i class="fa fa-minus-circle no"></i>
+              
+            {% endif %}
+              </td>
+          <td>{{ obj.ncm }}</td>
+          <td>{{ obj.produto }}</td>
+          <td>{{ obj.preco }}</td>
+          <td class="text-center">{{ obj.estoque }}</td>
+          <td class="text-center">{{ obj.estoque_minimo }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+      {% else %}
+  <p class="alert alert-warning">Nenhum registro encontrado</p>
+  {% endif %}
+</div>
+{% endblock content %}
