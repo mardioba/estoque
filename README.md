@@ -25,3 +25,5 @@ python manage.py migrate
 [Como usar o desacoplamento Python](https://simpleisbetterthancomplex.com/2015/11/26/package-of-the-week-python-decouple.html)
 
 [tutoriais django basico por RG3915](https://github.com/rg3915/tutoriais)
+
+[Include Bootstrap’s CSS and JS - Template Base.html](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
