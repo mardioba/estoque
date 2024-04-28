@@ -16,5 +16,5 @@ class Produto(models.Model):
     return self.produto
   
   def get_absolute_url(self):
-      return reverse_lazy('produto_detail', kwargs={'pk': self.pk})
+      return reverse_lazy('produto:produto_detail', kwargs={'pk': self.pk})
   
